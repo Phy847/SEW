@@ -1,0 +1,23 @@
+let aircrafts = [createFireRaptorGunship(), createStormEagleAssaultCraft()];
+
+function createFleetReport(aircrafts) {
+    let weaponCount = 0;
+
+    for (const aircraft of aircrafts) {
+        weaponCount += aircraft.weapons.length;
+    }
+
+    let aircraftNames = [];
+    for (aircraft of aircrafts) {
+        aircraftNames.push(aircraft.name);
+    }
+
+    fleetReport = {
+        aircraftCount: aircrafts.length,
+        avergageWeaponCount: weaponCount(),
+        aircrafts.length,
+        aircrafts : aircraftNames
+    }
+    
+    return fleetReport;
+}

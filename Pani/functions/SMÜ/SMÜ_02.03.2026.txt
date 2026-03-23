@@ -1,0 +1,14 @@
+Lösung SMÜ:
+
+Funktiondefinition
+
+function f(x) {
+    return x * x;
+}
+
+Funktionsaufruf
+
+let data = f(5)
+
+console.log(data)
+Ausgabe: 25

@@ -1,0 +1,18 @@
+function isEven(n) {
+    if (n % 2 == 0) {
+        return true;
+    }
+    return false;
+}
+
+function filterEvenValues(items) {
+    let data = [];
+
+    for(let n of items) {
+        if(isEven(n)) {
+            data.push(n);
+        }
+    }
+
+    return data;
+}
