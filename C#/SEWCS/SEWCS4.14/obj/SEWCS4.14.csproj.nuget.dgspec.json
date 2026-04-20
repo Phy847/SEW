@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/philip/Github/SEW/Birnzain/C#/SEWCS/SEWCS4.14/SEWCS4.14.csproj": {}
+    "/home/philip/Github/SEW/C#/SEWCS/SEWCS4.14/SEWCS4.14.csproj": {}
   },
   "projects": {
-    "/home/philip/Github/SEW/Birnzain/C#/SEWCS/SEWCS4.14/SEWCS4.14.csproj": {
+    "/home/philip/Github/SEW/C#/SEWCS/SEWCS4.14/SEWCS4.14.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/philip/Github/SEW/Birnzain/C#/SEWCS/SEWCS4.14/SEWCS4.14.csproj",
+        "projectUniqueName": "/home/philip/Github/SEW/C#/SEWCS/SEWCS4.14/SEWCS4.14.csproj",
         "projectName": "SEWCS4.14",
-        "projectPath": "/home/philip/Github/SEW/Birnzain/C#/SEWCS/SEWCS4.14/SEWCS4.14.csproj",
+        "projectPath": "/home/philip/Github/SEW/C#/SEWCS/SEWCS4.14/SEWCS4.14.csproj",
         "packagesPath": "/home/philip/.nuget/packages/",
-        "outputPath": "/home/philip/Github/SEW/Birnzain/C#/SEWCS/SEWCS4.14/obj/",
+        "outputPath": "/home/philip/Github/SEW/C#/SEWCS/SEWCS4.14/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/philip/.nuget/NuGet/NuGet.Config"
