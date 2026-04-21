@@ -80,7 +80,7 @@ public class Functions
         }
     }
 
-    public static void Login System ()
+    public static void LoginSystem ()
     {
         Console.Write("Enter Username: ");
         string name = Console.ReadLine();
@@ -412,6 +412,62 @@ public class Functions
             case 9: Console.WriteLine("IX"); break;
             case 10: Console.WriteLine("X"); break;
             default: Console.WriteLine("Invalid number"); break;
+        }
+    }
+
+    public static void AtmSimulation()
+    {
+        Console.WriteLine("Balance");
+        Console.WriteLine("Deposit");
+        Console.WriteLine("Withdraw");
+        Console.WriteLine("choose operation: ");
+        string operation = Console.ReadLine();
+
+        double balance = 1000;
+
+        switch (operation)
+        {
+            case "Balance": Console.WriteLine($"Your Balance: {balance}"); break;
+            case "Deposit":
+                Console.Write("Enter amount to deposit: ");
+                double deposit = double.Parse(Console.ReadLine());
+                balance += deposit;
+                Console.WriteLine($"Your new Balance: {balance}");
+                break;
+            case "Withdraw":
+                Console.Write("Enter amount to withdraw: ");
+                double withdraw = double.Parse(Console.ReadLine());
+
+                if (withdraw > balance)
+                {
+                    Console.WriteLine("You dont't have enough balance");
+                }
+                else
+                {
+                    balance -= withdraw;
+                    Console.WriteLine($"Your new Balance: {balance}");
+                }
+
+                break;
+        }
+    }
+
+    public static void DirectionInput()
+    {
+        Console.WriteLine("Enter a direction (w/a/s/d): ");
+        char direction = char.Parse(Console.ReadLine());
+
+        switch (direction)
+        {
+            case 'w':
+            case 'W': Console.WriteLine("Player moved up"); break;
+            case 'a':
+            case 'A': Console.WriteLine("Player moved left"); break;
+            case 's':
+            case 'S': Console.WriteLine("Player moved down"); break;
+            case 'd':
+            case 'D': Console.WriteLine("Player moved right"); break;
+            default: Console.WriteLine("Invalid direction"); break;
         }
     }
     
