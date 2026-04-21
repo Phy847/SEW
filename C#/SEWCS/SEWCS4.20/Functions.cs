@@ -80,8 +80,6 @@ public class Functions
         }
     }
 
-    //SEW zusatz (du kennst dich hoffentlich aus(ist btw im github editor geschrieben also wenns nicht hinhaut liegts wahrscheinlich daran))---------------------------------
-
     public static void Login System ()
     {
         Console.Write("Enter Username: ");
@@ -147,8 +145,6 @@ public class Functions
         }
     }
 
-//SEW zusatz 1 endet hier ---------------------------------------------------------------------------------
-
     public static void ShoppingDiscount()
     {
         Console.Write("Enter the price of your shopping cart: ");
@@ -204,8 +200,6 @@ public class Functions
         }
     }
 
-//SEW zusatz 2 -------------------------------------------------------------------------------------------------------
-
     public static void SpeedTicketCalculator ()
     {
         Console.Write("How fast were you going? ");
@@ -254,8 +248,6 @@ public class Functions
             Console.WriteLine($"Your ticket is {ticket} euronen");
         }
     }
-    
-//SEW zusatz 2 ende --------------------------------------------------------------------------------------------------
 
     public static void MonthText()
     {
