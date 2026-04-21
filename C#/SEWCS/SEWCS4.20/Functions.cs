@@ -270,4 +270,114 @@ public class Functions
             default: Console.WriteLine("Invalid number"); break;
         }
     }
+    
+    public static void EvenCounter () 
+    {
+        for (int i = 0; i <= 100; i++) 
+        {
+            if (i % 2 == 0)
+            {
+                Console.WriteLine($"{i}");
+            }
+        }
+    }
+
+    public static void SumOfN()
+    {
+        Console.Write("Enter a number: ");
+        int n = int.Parse(Console.ReadLine());
+
+        int sum = 0;
+
+        for (int i = 0; i <= n; i++)
+        {
+            sum += i;
+            Console.WriteLine(sum);
+        }
+    }
+
+    public static void SquareOfStars()
+    {
+        Console.Write("Enter number of Lines: ");
+        int lines = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < lines; i++)
+        {
+            Console.WriteLine("****");
+        }
+    }
+
+    public static void PrimeNumberChecker()
+    {
+        Console.Write("Enter a number: ");
+        int number = int.Parse(Console.ReadLine());
+
+        bool isPrime = true;
+
+        for (int i = 2; i <= number / 2; i++)
+        {
+            if (number <= 1)
+            {
+                isPrime = false;
+            }
+            
+            if (number % i == 0)
+            {
+                isPrime = false;
+                break;
+            }
+        }
+
+        Console.Write($"{number} is prime: {isPrime}");
+    }
+
+    public static void NumberGuessingGame()
+    {
+        Random random = new Random();
+        int number = random.Next(1, 101);
+
+        int guess;
+        int trys = 0;
+
+        do
+        {
+            Console.Write("Your guess: ");
+            guess = int.Parse(Console.ReadLine());
+            trys++;
+
+            if (guess > number)
+            {
+                Console.WriteLine("Too high!");
+            } else if (guess < number)
+            {
+                Console.WriteLine("Too low!");
+                
+            } else
+            {
+                Console.WriteLine($"You guessed it in {trys} tries!");
+                break;
+            }
+        } while (guess != number);
+    }
+
+    public static void MultiplicationTable()
+    {
+        int size = 8;
+
+        for (int row = 0; row < size; row++)
+        {
+            for (int col = 0; col < size; col++)
+            {
+                if ((row + col) % 2 == 0)
+                {
+                    Console.Write('#');
+                }
+                else
+                {
+                    Console.Write('.');
+                }
+            }
+            Console.WriteLine();
+        }
+    }
 }
