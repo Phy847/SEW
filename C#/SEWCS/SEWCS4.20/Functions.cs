@@ -302,6 +302,36 @@ public class Functions
         }
     }
 
+    public static void AnimalSounds ()
+    {
+        Console.Write("Enter animal: ");
+        string animal = Console.ReadLine();
+
+        switch (animal)
+        {
+            case "cat": Console.WriteLine("Meow"); break;
+            case "dog": Console.WriteLine("Woof"); break;
+            case "sheep": Console.WriteLine("Meeh"); break;
+            default: Console.WriteLine("undefinded"); break;
+        }
+    }
+
+    public static void VowelChecker ()
+    {
+        Console.Write("Enter character: ");
+        char x = char.Parse(Console.ReadLine());
+
+        switch (x)
+        {
+            case 'a': Console.WriteLine($"{x} is a vocal"); break;
+            case 'e': Console.WriteLine($"{x} is a vocal"); break;
+            case 'i': Console.WriteLine($"{x} is a vocal"); break;
+            case 'o': Console.WriteLine($"{x} is a vocal"); break;
+            case 'u': Console.WriteLine($"{x} is a vocal"); break;
+            default: Console.WriteLine($"{x} is not a vocal"); break;
+        }
+    }
+
     public static void PizzaConfigurator()
     {
         Console.Write("Enter the size of your pizza (s, m, l)");
