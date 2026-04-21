@@ -80,6 +80,75 @@ public class Functions
         }
     }
 
+    //SEW zusatz (du kennst dich hoffentlich aus(ist btw im github editor geschrieben also wenns nicht hinhaut liegts wahrscheinlich daran))---------------------------------
+
+    public static void Login System ()
+    {
+        Console.Write("Enter Username: ");
+        string name = Console.ReadLine();
+        Console.Write("Enter PIN: ");
+        int pin = int.Parse(Console.ReadLine());
+
+        if (name == "admin" && pin == 9999)
+        {
+            Console.WriteLine("Acces Granted");
+        }
+    }
+
+    public static void LeapYear ()
+    {
+        Console.Write("Enter year: ");
+        int year = int.Parse(Console.ReadLine());
+
+        bool isLeap = false;
+
+        if (year % 4 == 0)
+        {
+            isLeap = true;
+
+            if (year % 100 == 0)
+            {
+                isLeap = false;
+            }
+        }
+
+        if (year % 400 == 0)
+        {
+            isLeap = true;
+        }
+
+        Console.WriteLine($"{year} is Leap: {isLeap}");
+    }
+
+    public static void AdventureGame ()
+    {
+        Console.WriteLine("You are standing in front of 2 doors. Do you take the left one or the right one? ");
+        string choice = Console.ReadLine();
+
+        if (choice == "left" || choice == "right")
+        {
+            if (choice == "left")
+            {
+                Console.WriteLine("There is a treasure chest. Do you open it? (y/n): ");
+                string chest = Console.ReadLine();
+
+                if (chest == "y")
+                {
+                    Console.WriteLine("You found Gold! Congrats!");
+                } else {
+                    Console.WriteLine("You left the chest");
+                }
+            }
+
+            if (choice == "right")
+            {
+                Console.WriteLine("You encountered a Monster and died");
+            }
+        }
+    }
+
+//SEW zusatz 1 endet hier ---------------------------------------------------------------------------------
+
     public static void ShoppingDiscount()
     {
         Console.Write("Enter the price of your shopping cart: ");
@@ -134,6 +203,59 @@ public class Functions
             Console.Write("Invalid input");
         }
     }
+
+//SEW zusatz 2 -------------------------------------------------------------------------------------------------------
+
+    public static void SpeedTicketCalculator ()
+    {
+        Console.Write("How fast were you going? ");
+        int speed = int.Parse(Console.ReadLine());
+        Console.Write("Are you on probation? (y/n) ");
+        string prob = Console.ReadLine();
+
+        bool isProb = false;
+        int ticket = 0;
+        bool revoke = false;
+
+        if (prob == "y")
+        {
+            isProb = true;
+        } else if (prob != "n")
+        {
+            Console.WriteLine("Invalid Input");
+        }
+
+        if (speed <= 50)
+        {
+            Console.WriteLine("Perfect! You are going the speed limit");
+            revoke = true;
+        } 
+        else if (speed > 50 && speed <= 70)
+        {
+            ticket = 30;
+        }
+        else if (speed > 70 && speed <= 80)
+        {
+            ticket = 90;
+        } 
+        else
+        {
+            Console.WriteLine("Your Drivers License got revoked");
+            revoke = true;
+        }
+
+        if (isProb)
+        {
+            ticket = ticket * 2;
+        }
+        
+        if (!revoke)
+        {
+            Console.WriteLine($"Your ticket is {ticket} euronen");
+        }
+    }
+    
+//SEW zusatz 2 ende --------------------------------------------------------------------------------------------------
 
     public static void MonthText()
     {
