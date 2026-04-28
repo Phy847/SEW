@@ -3,6 +3,6 @@
 //int[] numbers = { 5, 3, 8, 1, 2 };
 
 //int[] sorted = Functions.BubbleSort(numbers);
-//Console.WriteLine(string.Join(", ", sorted));
+//Console.WriteLine(string.Join(", ", sorted))
 
-Functions.ArrayInitializer();
+Functions.DynamicSummer();

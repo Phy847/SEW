@@ -102,8 +102,41 @@ public class Functions
         }
         
         Console.WriteLine("Which item do you want to remove?: ");
-        string remove = Console.ReadLine();
+        int remove = int.Parse(Console.ReadLine());
         
+        inventory.SetValue("Empty", remove-1);
+        foreach (string item in inventory)
+        {
+            Console.WriteLine(item);
+        }
+    }
+
+    public static void DynamicSummer()
+    {
+        List<int> num = new List<int>();
+
+        int total = 0;
         
+        Console.WriteLine("Enter numbers to add (-1 to stop): ");
+
+        int input = 0;
+        while (true)
+        {
+            input = int.Parse(Console.ReadLine());
+            
+            if (input == -1)
+            {
+                break;
+            }
+            
+            num.Add(input);
+        }
+
+        foreach (int i in num)
+        {
+            total += i;
+        }
+        
+        Console.WriteLine(total);
     }
 }
