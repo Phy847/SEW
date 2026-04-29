@@ -23,7 +23,12 @@ public class Functions
 
     public static void WelcomeBanner(string name)
     {
-        Console.WriteLine($"***{name}***");
+        string text = $"* Welcome {name} *";
+        string border = new string('*', text.Length);
+
+        Console.WriteLine(border);
+        Console.WriteLine(text);
+        Console.WriteLine(border);
     }
 
     public static void ScoreBoard(string Player, int points)
@@ -138,5 +143,268 @@ public class Functions
         }
         
         Console.WriteLine(total);
+    }
+
+    public static void TheCleaner()
+    {
+        List<string> names = new List<string> {"Tobias", "Tobias", "Tobias", "Alex", "Gabsch"};
+        
+        foreach (string name in names.Distinct())
+        {
+            Console.WriteLine(name);
+        }
+    }
+
+    public static void HighscoreList()
+    {
+        List<int>scores = new List<int>();
+
+        for (int i = 0; i < 5; i++)
+        {
+            Console.WriteLine("Enter Score: ");
+            scores.Add(int.Parse(Console.ReadLine()));
+        }
+        
+        scores.Sort();
+        scores.Reverse();
+
+        for (int k = 0; k < 3; k++)
+        {
+            Console.WriteLine(scores[k]);
+        }
+    }
+
+    public static void WordFilter()
+    {
+        List<string> words = new List<string>();
+        List<string> newWords = new List<string>();
+        
+        Console.WriteLine("Enter 10 words: ");
+
+        for (int i = 0; i < 10; i++)
+        {
+            words.Add(Console.ReadLine());
+        }
+
+        for (int k = 0; k < words.Count; k++)
+        {
+            if (words[k].Length > 4)
+            {
+                newWords.Add(words[k]);
+            }
+        }
+        
+        Console.WriteLine("------------------------");
+
+        foreach (string word in newWords)
+        {
+            Console.WriteLine(word);
+        }
+    }
+
+    public static void InsertAtIndex()
+    {
+        List<string> words = new List<string> {"insert", "any", "word"};
+
+        foreach (string word in words)
+        {
+            Console.WriteLine(word);
+        }
+        
+        Console.WriteLine("Enter word to add: ");
+        string add = Console.ReadLine();
+        Console.WriteLine("Enter index of word: ");
+        int index = int.Parse(Console.ReadLine());
+        
+        words.Insert(index, add);
+
+        foreach (string word in words)
+        {
+            Console.WriteLine(word);
+        }
+    }
+
+    public static void TodoManager()
+    {
+        List<string> todo = new List<string>();
+
+        bool loop = true;
+
+        while (loop)
+        {
+            Console.WriteLine("What would you like to do?");
+            Console.WriteLine("1 Add Item");
+            Console.WriteLine("2 Remove Item");
+            Console.WriteLine("3 Show List");
+            Console.WriteLine("4 exit");
+            
+            int input = int.Parse(Console.ReadLine());
+
+            if (input == 1)
+            {
+                Console.WriteLine("What to add?");
+                todo.Add(Console.ReadLine());
+            } else if (input == 2)
+            {
+                Console.WriteLine("Which item to remove? (index): ");
+                int index = int.Parse(Console.ReadLine());
+                
+                todo.RemoveAt(index);
+            } else if (input == 3)
+            {
+                foreach (string word in todo)
+                {
+                    Console.WriteLine(word);
+                }
+            } else if (input == 4)
+            {
+                loop = false;
+            }
+        }
+    }
+
+    public static void AverageGrade()
+    {
+        List<int> grades = new List<int>();
+        bool loop = true;
+        
+        Console.WriteLine("Enter Grades: (-1 to exit) ");
+
+        while (loop)
+        {
+            int input = int.Parse(Console.ReadLine());
+
+            if (input == -1)
+            {
+                break;
+            }
+            else
+            {
+                grades.Add(input);
+            }
+        }
+        
+        grades.Sort();
+        int count = 0;
+        
+        foreach (int grade in grades)
+        {
+            count += grade;
+        }
+        
+        int avg = count / grades.Count;
+        
+        Console.WriteLine($"Average Grade: {avg}");
+
+        int one = 0;
+        
+        foreach (int grade in grades)
+        {
+            if (grade == 1)
+            {
+                one++;
+            }
+        }
+        
+        Console.WriteLine($"Number of A's : {one}");
+        Console.WriteLine($"Worst grade: {grades[grades.Count -1]}");
+    }
+
+    public static void InventoryExpansion()
+    {
+        List<string> inventory = new List<string>();
+        
+        Console.WriteLine("Enter item(s) to add to inventory: ");
+
+        while (true)
+        {
+            inventory.Add(Console.ReadLine());
+
+            if (inventory.Count == 10)
+            {
+                Console.WriteLine("Inventory full!");
+                break;
+            }
+        }
+        
+        Console.WriteLine("Enter item name to search for: ");
+        string name = Console.ReadLine();
+
+        if (inventory.Contains(name))
+        {
+            Console.WriteLine("Item is in the inventory!");
+        }
+        else
+        {
+            Console.WriteLine("Item not found!");
+        }
+    }
+
+    public static void NumberSorter()
+    {
+        List<int> og = new List<int>();
+        List<int> even = new List<int>();
+        List<int> odd = new List<int>();
+        
+        Console.WriteLine("Enter 10 numbers: ");
+
+        for (int i = 0; i < 10; i++)
+        {
+            og.Add(int.Parse(Console.ReadLine()));
+        }
+
+        foreach (int i in og)
+        {
+            if (i % 2 == 0)
+            {
+                even.Add(i);
+            }
+            else
+            {
+                odd.Add(i);
+            }
+        }
+        
+        Console.WriteLine("Even numbers: ");
+
+        foreach (int i in even)
+        {
+            Console.WriteLine(i);
+        }
+        
+        Console.WriteLine("Odd numbers: ");
+
+        foreach (int i in odd)
+        {
+            Console.WriteLine(i);
+        }
+    }
+
+    public static void ReverseList()
+    {
+        List<string> words = new List<string>();
+        
+        bool loop = true;
+        
+        Console.WriteLine("Enter words: (exit, to exit) ");
+
+        while (loop)
+        {
+            string input = Console.ReadLine();
+
+            if (input == "exit")
+            {
+                break;
+            }
+            
+            words.Add(input);
+        }
+        
+        words.Reverse();
+
+        foreach (string word in words)
+        {
+            Console.WriteLine(word);
+        }
     }
 }

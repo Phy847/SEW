@@ -5,4 +5,4 @@
 //int[] sorted = Functions.BubbleSort(numbers);
 //Console.WriteLine(string.Join(", ", sorted))
 
-Functions.DynamicSummer();
+Functions.ReverseList();
