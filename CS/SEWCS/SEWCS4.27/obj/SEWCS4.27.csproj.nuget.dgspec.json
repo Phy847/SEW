@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/philip/Github/SEW/CS/SEWCS/SEWCS4.27/SEWCS4.27.csproj": {}
+    "C:\\Users\\papla\\RiderProjects\\SEW\\CS\\SEWCS\\SEWCS4.27\\SEWCS4.27.csproj": {}
   },
   "projects": {
-    "/home/philip/Github/SEW/CS/SEWCS/SEWCS4.27/SEWCS4.27.csproj": {
+    "C:\\Users\\papla\\RiderProjects\\SEW\\CS\\SEWCS\\SEWCS4.27\\SEWCS4.27.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/philip/Github/SEW/CS/SEWCS/SEWCS4.27/SEWCS4.27.csproj",
+        "projectUniqueName": "C:\\Users\\papla\\RiderProjects\\SEW\\CS\\SEWCS\\SEWCS4.27\\SEWCS4.27.csproj",
         "projectName": "SEWCS4.27",
-        "projectPath": "/home/philip/Github/SEW/CS/SEWCS/SEWCS4.27/SEWCS4.27.csproj",
-        "packagesPath": "/home/philip/.nuget/packages/",
-        "outputPath": "/home/philip/Github/SEW/CS/SEWCS/SEWCS4.27/obj/",
+        "projectPath": "C:\\Users\\papla\\RiderProjects\\SEW\\CS\\SEWCS\\SEWCS4.27\\SEWCS4.27.csproj",
+        "packagesPath": "C:\\Users\\papla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\papla\\RiderProjects\\SEW\\CS\\SEWCS\\SEWCS4.27\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/philip/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\papla\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/philip/.dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Users\\papla\\.dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

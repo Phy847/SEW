@@ -8,9 +8,18 @@ public class StringAnalyzer
         return text.Length;
     }
 
-    static int GetVocalCount ()
+    static int GetVocalCount (string text)
     {
-        
+        int count = 0;
+
+        foreach (char a in text)
+        {
+            if (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u')
+            {
+                count++;
+            }
+        }
+        return count;
     }
 
     static int GetWordCount(string text)
@@ -20,7 +29,7 @@ public class StringAnalyzer
 
     static double GetAvgWordCount(string text)
     {
-        return (double)GetWordCount(text) / GetLetterCount(text);
+        return (double)GetLetterCount(text) / GetWordCount(text);
     }
     
     public static void stringAnalyzer ()
@@ -29,7 +38,7 @@ public class StringAnalyzer
         
         int letters = GetLetterCount(text);
         int wordCount = GetWordCount(text);
-        int vocals = GetVocalCount();
+        int vocals = GetVocalCount(text);
         double avgWordCount = GetAvgWordCount(text);
         string newText = text.ToUpper();
     }

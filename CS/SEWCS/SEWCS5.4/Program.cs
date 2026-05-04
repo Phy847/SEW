@@ -1,3 +1,7 @@
 ﻿using SEWCS5._4.functions.Alltogether;
 
-zahlenVerarbeitung.zahlenVerarbeitung();
+//Noch zu erledigen:
+//Kontostand
+//PasswordValidator
+//LagerVerwaltung
+//QuizGame (optional)
