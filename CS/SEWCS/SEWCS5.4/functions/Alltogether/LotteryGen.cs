@@ -1,5 +1,4 @@
-namespace SEWCS5._4.fun.Alltogether;
-using zahlenVerarbeitung;
+namespace SEWCS5._4.functions.Alltogether;
 
 public class LotteryGen
 {

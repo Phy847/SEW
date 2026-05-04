@@ -1,4 +1,4 @@
-namespace SEWCS5._4.fun.Alltogether;
+namespace SEWCS5._4.functions.Alltogether;
 
 public class StudentenVerwaltung
 {

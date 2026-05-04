@@ -1,4 +1,4 @@
-namespace SEWCS5._4.fun;
+namespace SEWCS5._4.functions;
 
 public class StringAnalyzer
 {
