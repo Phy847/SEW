@@ -6,3 +6,4 @@ using SEWCS5._4.functions;
 //LagerVerwaltung
 //QuizGame (optional)
 
+PasswordValidator.passwordValidator();

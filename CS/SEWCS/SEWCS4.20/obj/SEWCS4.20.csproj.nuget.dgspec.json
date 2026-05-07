@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\P.Placht\\RiderProjects\\SEW\\CS\\SEWCS\\SEWCS4.20\\SEWCS4.20.csproj": {}
+    "C:\\Users\\papla\\RiderProjects\\SEW\\CS\\SEWCS\\SEWCS4.20\\SEWCS4.20.csproj": {}
   },
   "projects": {
-    "C:\\Users\\P.Placht\\RiderProjects\\SEW\\CS\\SEWCS\\SEWCS4.20\\SEWCS4.20.csproj": {
+    "C:\\Users\\papla\\RiderProjects\\SEW\\CS\\SEWCS\\SEWCS4.20\\SEWCS4.20.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\P.Placht\\RiderProjects\\SEW\\CS\\SEWCS\\SEWCS4.20\\SEWCS4.20.csproj",
+        "projectUniqueName": "C:\\Users\\papla\\RiderProjects\\SEW\\CS\\SEWCS\\SEWCS4.20\\SEWCS4.20.csproj",
         "projectName": "SEWCS4.20",
-        "projectPath": "C:\\Users\\P.Placht\\RiderProjects\\SEW\\CS\\SEWCS\\SEWCS4.20\\SEWCS4.20.csproj",
-        "packagesPath": "C:\\Users\\P.Placht\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\P.Placht\\RiderProjects\\SEW\\CS\\SEWCS\\SEWCS4.20\\obj\\",
+        "projectPath": "C:\\Users\\papla\\RiderProjects\\SEW\\CS\\SEWCS\\SEWCS4.20\\SEWCS4.20.csproj",
+        "packagesPath": "C:\\Users\\papla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\papla\\RiderProjects\\SEW\\CS\\SEWCS\\SEWCS4.20\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\P.Placht\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\papla\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\P.Placht\\.dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Users\\papla\\.dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
