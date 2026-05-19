@@ -1,0 +1,15 @@
+C:\Users\P.Placht\RiderProjects\SEW\CS\SEWCS\SEWCS5.12\obj\Debug\net10.0\SEWCS5.12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\P.Placht\RiderProjects\SEW\CS\SEWCS\SEWCS5.12\obj\Debug\net10.0\SEWCS5.12.AssemblyInfoInputs.cache
+C:\Users\P.Placht\RiderProjects\SEW\CS\SEWCS\SEWCS5.12\obj\Debug\net10.0\SEWCS5.12.AssemblyInfo.cs
+C:\Users\P.Placht\RiderProjects\SEW\CS\SEWCS\SEWCS5.12\obj\Debug\net10.0\SEWCS5.12.csproj.CoreCompileInputs.cache
+C:\Users\P.Placht\RiderProjects\SEW\CS\SEWCS\SEWCS5.12\obj\Debug\net10.0\SEWCS5.12.sourcelink.json
+C:\Users\P.Placht\RiderProjects\SEW\CS\SEWCS\SEWCS5.12\bin\Debug\net10.0\SEWCS5.12.exe
+C:\Users\P.Placht\RiderProjects\SEW\CS\SEWCS\SEWCS5.12\bin\Debug\net10.0\SEWCS5.12.deps.json
+C:\Users\P.Placht\RiderProjects\SEW\CS\SEWCS\SEWCS5.12\bin\Debug\net10.0\SEWCS5.12.runtimeconfig.json
+C:\Users\P.Placht\RiderProjects\SEW\CS\SEWCS\SEWCS5.12\bin\Debug\net10.0\SEWCS5.12.dll
+C:\Users\P.Placht\RiderProjects\SEW\CS\SEWCS\SEWCS5.12\bin\Debug\net10.0\SEWCS5.12.pdb
+C:\Users\P.Placht\RiderProjects\SEW\CS\SEWCS\SEWCS5.12\obj\Debug\net10.0\SEWCS5.12.dll
+C:\Users\P.Placht\RiderProjects\SEW\CS\SEWCS\SEWCS5.12\obj\Debug\net10.0\refint\SEWCS5.12.dll
+C:\Users\P.Placht\RiderProjects\SEW\CS\SEWCS\SEWCS5.12\obj\Debug\net10.0\SEWCS5.12.pdb
+C:\Users\P.Placht\RiderProjects\SEW\CS\SEWCS\SEWCS5.12\obj\Debug\net10.0\SEWCS5.12.genruntimeconfig.cache
+C:\Users\P.Placht\RiderProjects\SEW\CS\SEWCS\SEWCS5.12\obj\Debug\net10.0\ref\SEWCS5.12.dll

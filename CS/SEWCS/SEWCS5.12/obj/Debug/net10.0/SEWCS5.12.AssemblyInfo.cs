@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("SEWCS4.27")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("SEWCS5.12")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+175173877230b8add0ed9d030707e6d96f8160b0")]
-[assembly: System.Reflection.AssemblyProductAttribute("SEWCS4.27")]
-[assembly: System.Reflection.AssemblyTitleAttribute("SEWCS4.27")]
+[assembly: System.Reflection.AssemblyProductAttribute("SEWCS5.12")]
+[assembly: System.Reflection.AssemblyTitleAttribute("SEWCS5.12")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Von der MSBuild WriteCodeFragment-Klasse generiert.
