@@ -47,4 +47,9 @@ public class Functions
         int maxRest = Mark(array, index + 1);
         return Math.Max(array[index], maxRest);
     }
+
+    public static string FauelRemover(string word)
+    {
+        if ()
+    }
 }
