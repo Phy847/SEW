@@ -50,6 +50,10 @@ public class Functions
 
     public static string FauelRemover(string word)
     {
-        if ()
+        if (word.Length == 0) return "";
+        char first = word[0];
+        string rest = FauelRemover(word.Substring(1));
+        if ("aeiouAEIOU".Contains(first)) return rest;
+        return first + rest;
     }
 }
