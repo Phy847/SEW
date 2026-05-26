@@ -1,5 +1,5 @@
 ﻿using SEWCS5._19;
 
-List<int> list = new List<int> {2,3,4, 4};
+int[] array = [2, 4, 5, 3, 67, 88, 1];
 
-Console.WriteLine(Functions.EvenCount(list, 0));
+Console.WriteLine(Functions.Mark(array, 0));

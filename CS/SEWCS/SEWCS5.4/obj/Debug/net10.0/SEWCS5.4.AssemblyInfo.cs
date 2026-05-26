@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SEWCS5.4")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+175173877230b8add0ed9d030707e6d96f8160b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73936964eb06d911b6ac3bfdc502db4309480ecb")]
 [assembly: System.Reflection.AssemblyProductAttribute("SEWCS5.4")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SEWCS5.4")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
