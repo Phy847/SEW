@@ -1,0 +1,15 @@
+C:\Users\papla\RiderProjects\SEW\CS\SEWCS\Minesweeper\bin\Debug\net10.0\Minesweeper.exe
+C:\Users\papla\RiderProjects\SEW\CS\SEWCS\Minesweeper\bin\Debug\net10.0\Minesweeper.deps.json
+C:\Users\papla\RiderProjects\SEW\CS\SEWCS\Minesweeper\bin\Debug\net10.0\Minesweeper.runtimeconfig.json
+C:\Users\papla\RiderProjects\SEW\CS\SEWCS\Minesweeper\bin\Debug\net10.0\Minesweeper.dll
+C:\Users\papla\RiderProjects\SEW\CS\SEWCS\Minesweeper\bin\Debug\net10.0\Minesweeper.pdb
+C:\Users\papla\RiderProjects\SEW\CS\SEWCS\Minesweeper\obj\Debug\net10.0\Minesweeper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\papla\RiderProjects\SEW\CS\SEWCS\Minesweeper\obj\Debug\net10.0\Minesweeper.AssemblyInfoInputs.cache
+C:\Users\papla\RiderProjects\SEW\CS\SEWCS\Minesweeper\obj\Debug\net10.0\Minesweeper.AssemblyInfo.cs
+C:\Users\papla\RiderProjects\SEW\CS\SEWCS\Minesweeper\obj\Debug\net10.0\Minesweeper.csproj.CoreCompileInputs.cache
+C:\Users\papla\RiderProjects\SEW\CS\SEWCS\Minesweeper\obj\Debug\net10.0\Minesweeper.sourcelink.json
+C:\Users\papla\RiderProjects\SEW\CS\SEWCS\Minesweeper\obj\Debug\net10.0\Minesweeper.dll
+C:\Users\papla\RiderProjects\SEW\CS\SEWCS\Minesweeper\obj\Debug\net10.0\refint\Minesweeper.dll
+C:\Users\papla\RiderProjects\SEW\CS\SEWCS\Minesweeper\obj\Debug\net10.0\Minesweeper.pdb
+C:\Users\papla\RiderProjects\SEW\CS\SEWCS\Minesweeper\obj\Debug\net10.0\Minesweeper.genruntimeconfig.cache
+C:\Users\papla\RiderProjects\SEW\CS\SEWCS\Minesweeper\obj\Debug\net10.0\ref\Minesweeper.dll
