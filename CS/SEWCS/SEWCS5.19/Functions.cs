@@ -56,4 +56,10 @@ public class Functions
         if ("aeiouAEIOU".Contains(first)) return rest;
         return first + rest;
     }
+
+    public static double NestListSum(List<List<double>> list)
+    {
+        if (list.Count == 0) return 0;
+        
+    }
 }
