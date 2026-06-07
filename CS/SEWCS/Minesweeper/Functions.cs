@@ -40,9 +40,6 @@ public class Functions
 
     public Field[,] DifficultySelect()
     {
-        int width = 0;
-        int height = 0;
-        int bombs = 0;
         
         Console.WriteLine("Choose Difficulty: easy, medium, hard, tus nicht");
         string input = Console.ReadLine();
@@ -50,30 +47,18 @@ public class Functions
         switch (input)
         {
             case "easy":
-                width = 7;
-                height = 10;
-                bombs = 8;
-                break;
+                return Efield(7, 10, 8);
             
             case "medium":
-                width = 14;
-                height = 10;
-                bombs = 20;
-                break;
+                return Efield(14, 10, 20);
             
             case "hard":
-                width = 14;
-                height = 20;
-                bombs = 50;
-                break;
+                return Efield(14, 20, 50);
             
             case "tus nicht":
-                width = 25;
-                height = 25;
-                bombs = 100;
-                break;
+                return Efield(25, 25, 100);
+            
+            default: Console.WriteLine("Invalid Argument! choosing easy-mode"); return Efield(7, 10, 8);
         }
-        
-        return Efield(width, height, bombs);
     }
 }
