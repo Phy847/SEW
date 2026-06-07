@@ -95,7 +95,7 @@ public class Functions
 
         for (int r = row - 1; r <= row + 1; r++)
         {
-            for (int c = col; c <= col + 1; c++)
+            for (int c = col - 1; c <= col + 1; c++)
             {
                 if (r >= 0 && r < field.GetLength(0) && c >= 0 && c < field.GetLength(1)) //prüft ob index gültig is
                 {
