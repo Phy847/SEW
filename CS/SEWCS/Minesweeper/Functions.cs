@@ -37,4 +37,43 @@ public class Functions
         }
         return Efield;
     }
+
+    public Field[,] DifficultySelect()
+    {
+        int width = 0;
+        int height = 0;
+        int bombs = 0;
+        
+        Console.WriteLine("Choose Difficulty: easy, medium, hard, tus nicht");
+        string input = Console.ReadLine();
+
+        switch (input)
+        {
+            case "easy":
+                width = 7;
+                height = 10;
+                bombs = 8;
+                break;
+            
+            case "medium":
+                width = 14;
+                height = 10;
+                bombs = 20;
+                break;
+            
+            case "hard":
+                width = 14;
+                height = 20;
+                bombs = 50;
+                break;
+            
+            case "tus nicht":
+                width = 25;
+                height = 25;
+                bombs = 100;
+                break;
+        }
+        
+        return Efield(width, height, bombs);
+    }
 }
