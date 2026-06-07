@@ -1,21 +1,40 @@
 ﻿namespace Minesweeper;
 
+public enum Field
+{
+    mine = -1,
+    empty = 0,
+    one = 1,
+    two = 2,
+    three = 3,
+    four = 4,
+    five = 5,
+    six = 6,
+    seven = 7,
+    eight = 8,
+}
+
 public class Functions
 {
-    public static void DisplayField(int width, int height)
+    public Field[,] Efield(int width, int height, int bombs)
     {
-        Console.Clear();
-        string alphabet = " A B C D E F G H I J K L M N O P Q R S T U V W X Y Z";
-
-        Console.WriteLine("    " + alphabet.Substring(0, width * 2));
-        //Console.WriteLine("   " + new string('-', width * 2 + 1));
-
-        for (int y = 1; y <= height; y++)
-        {
-            string row = new string('X', width).Replace("X", "X ");
+        Field[,] Efield = new Field[height, width];
         
-            string distance = (y < 10) ? " " : "";
-            Console.WriteLine($"{distance}{y}   {row}");
+        Random random = new Random();
+
+        int placed = 0;
+
+        while (placed < bombs)
+        {
+            int row = random.Next(height);
+            int column = random.Next(width);
+
+            if (Efield[row, column] != Field.mine)
+            {
+                Efield[row, column] = Field.mine;
+                placed++;
+            }
         }
+        return Efield;
     }
 }

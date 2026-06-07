@@ -1,3 +1,9 @@
 ﻿using Minesweeper;
 
-Functions.DisplayField(7,5);
+class Programm
+{
+    static void Main()
+    {
+        
+    }
+}
