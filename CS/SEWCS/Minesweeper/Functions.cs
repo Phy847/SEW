@@ -120,21 +120,29 @@ public class Functions
 
     public void printgame()
     {
+        Console.Write("     ");
+
+        for (int axiscol = 0; axiscol < field.GetLength(1); axiscol++) Console.Write($"{axiscol:D2} ");
+        Console.WriteLine();
+        ;
+        
         for (int row = 0; row < field.GetLength(0); row++)
         {
+            Console.Write($"{row:D2} | ");
+            
             for (int col = 0; col < field.GetLength(1); col++)
             {
                 Field cell = field[row, col];
 
                 if (revealed[row, col] == true)
                 {
-                    if (cell == Field.mine) Console.Write("X ");
-                    else if (cell == Field.empty) Console.Write(". ");
-                    else Console.Write((int)cell + " ");
+                    if (cell == Field.mine) Console.Write("X  ");
+                    else if (cell == Field.empty) Console.Write(".  ");
+                    else Console.Write((int)cell + "  ");
                 }
                 else
                 {
-                    Console.Write("■ ");
+                    Console.Write("■  ");
                 }
             }
 
