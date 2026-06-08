@@ -19,7 +19,7 @@ public class Functions
     public Field[,] Efield(int width, int height, int bombs) //erstellt ein Feld mit bombem variable größe
     {
         Field[,] Efield = new Field[height, width];
-        
+
         Random random = new Random();
 
         int placed = 0;
@@ -35,36 +35,44 @@ public class Functions
                 placed++;
             }
         }
+
         return Efield;
     }
 
     public Field[,] DifficultySelect() //ruft die obere func auf mit dem passenden werten
     {
-        
-        Console.WriteLine("Choose Difficulty: easy, medium, hard, tus nicht");
+        Console.WriteLine("Choose Difficulty: easy, medium, hard, tus nicht, tus definitiv nicht");
         string input = Console.ReadLine();
 
         switch (input)
         {
             case "easy":
-                return Efield(7, 10, 8);
-            
+                return Efield(10, 7, 8);
+
             case "medium":
-                return Efield(14, 10, 20);
-            
+                return Efield(10, 4, 20);
+
             case "hard":
-                return Efield(14, 20, 50);
-            
+                return Efield(20, 14, 50);
+
             case "tus nicht":
                 return Efield(25, 25, 100);
             
-            default: Console.WriteLine("Invalid Argument! choosing easy-mode"); return Efield(7, 10, 8);
+            case "tus definitiv nicht":
+                return Efield(50, 50, 150);
+            
+            case "secret":
+                return Efield(1000, 1000, 2000);
+
+            default:
+                Console.WriteLine("Invalid Argument! choosing easy-mode");
+                return Efield(10, 7, 8);
         }
     }
 
     private Field[,] field; //dings da definieren sonnst kann mans unten nich aufrufen
     private bool[,] revealed;
-    
+
     public void CreateGame()
     {
         field = DifficultySelect(); //erstellt das Feld
@@ -106,7 +114,79 @@ public class Functions
                 }
             }
         }
-        
+
         return count;
+    }
+
+    public void printgame()
+    {
+        for (int row = 0; row < field.GetLength(0); row++)
+        {
+            for (int col = 0; col < field.GetLength(1); col++)
+            {
+                Field cell = field[row, col];
+
+                if (revealed[row, col] == true)
+                {
+                    if (cell == Field.mine) Console.Write("X ");
+                    else if (cell == Field.empty) Console.Write(". ");
+                    else Console.Write((int)cell + " ");
+                }
+                else
+                {
+                    Console.Write("■ ");
+                }
+            }
+
+            Console.WriteLine();
+        }
+    }
+
+    public int unveil()
+    {
+        Console.WriteLine("Enter Coordinates (zb.: 0,0): ");
+        string coordinates = Console.ReadLine();
+
+        string[] parts = coordinates.Split(',');
+
+        int row = int.Parse(parts[0]);
+        int col = int.Parse(parts[1]);
+
+        if (row >= 0 && row < field.GetLength(0) && col >= 0 && col < field.GetLength(1))
+        {
+            revealed[row, col] = true;
+        }
+        else
+        {
+            Console.WriteLine("Invalid coordinates!");
+            Console.WriteLine("press any button to retry");
+            Console.ReadKey();
+
+            return -1;
+        }
+
+        if (field[row, col] == Field.mine)
+        {
+            return 1;
+        }
+
+        return 0;
+    }
+
+    public void ShowField()
+    {
+        for (int row = 0; row < field.GetLength(0); row++)
+        {
+            for (int col = 0; col < field.GetLength(1); col++)
+            {
+                Field cell = field[row, col];
+
+                if (cell == Field.mine) Console.Write("X ");
+                else if (cell == Field.empty) Console.Write(". ");
+                else Console.Write((int)cell + " ");
+            }
+
+            Console.WriteLine();
+        }
     }
 }
