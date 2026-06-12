@@ -150,8 +150,25 @@ public class Functions
         }
     }
 
+    private bool AllBool()
+    {
+        int rows = field.GetLength(0);
+        int col = field.GetLength(1);
+
+        for (int i = 0; i < rows; i++)
+        {
+            for (int k = 0; k < col; k++)
+            {
+                if (field[i,k] != Field.mine && !revealed[i,k]) return false;
+            }
+        }
+
+        return true;
+    }
+
     public int unveil()
     {
+            
         Console.WriteLine("Enter Coordinates (zb.: 0,0): ");
         string coordinates = Console.ReadLine();
 
@@ -177,6 +194,8 @@ public class Functions
         {
             return 1;
         }
+        
+        if (AllBool()) return 2;
 
         return 0;
     }

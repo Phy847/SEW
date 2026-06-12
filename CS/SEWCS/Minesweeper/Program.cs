@@ -11,10 +11,19 @@ void Run()
     
     while (isRunning)
     {
-        game.printgame();
-        if (game.unveil() == 1) {
+        Console.Clear();
+        game.ShowField();
+        int result = game.unveil();
+        if (result == 1) {
             isRunning = false;
             game.ShowField();
+        }
+        else if (result == 2)
+        {
+            isRunning = false;
+            game.ShowField();
+            Console.WriteLine("You Won!");
+            return;
         }
     }
     
