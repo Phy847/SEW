@@ -1,5 +1,4 @@
 ﻿namespace Minesweeper;
-
 public enum Field //erstellt enum mit den datentypen + zugeordnete werte
 {
     mine = -1,
@@ -63,6 +62,9 @@ public class Functions
             
             case "secret":
                 return Efield(1000, 1000, 2000);
+            
+            case "scam":
+                return Efield(100, 100, 10000);
 
             default:
                 Console.WriteLine("Invalid Argument! choosing easy-mode");
