@@ -12,7 +12,7 @@ void Run()
     while (isRunning)
     {
         Console.Clear();
-        game.ShowField();
+        game.printgame();
         int result = game.unveil();
         if (result == 1) {
             isRunning = false;
