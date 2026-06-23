@@ -7,7 +7,7 @@ public enum Field //erstellt enum mit den datentypen + zugeordnete werte
     two = 2,
     three = 3,
     four = 4,
-    five = 5,
+    five = 5,   
     six = 6,
     seven = 7,
     eight = 8,
@@ -176,8 +176,8 @@ public class Functions
 
         string[] parts = coordinates.Split(',');
 
-        int row = int.Parse(parts[0]);
-        int col = int.Parse(parts[1]);
+        int col = int.Parse(parts[0]);
+        int row = int.Parse(parts[1]);
 
         if (row >= 0 && row < field.GetLength(0) && col >= 0 && col < field.GetLength(1))
         {
